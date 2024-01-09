@@ -62,10 +62,10 @@ func GetModuleName() (string, error) {
 	if err != nil {
 		return "", err
 	}
-	if len(lines) != 1 {
-		return "", fmt.Errorf("unexpected number of lines")
-	}
-	return lines[0], nil
+	// if len(lines) != 1 {
+	// 	return "", fmt.Errorf("unexpected number of lines")
+	// }
+	return lines[len(lines)-1], nil
 }
 
 // ListProjectPackages lists all packages in the current project
