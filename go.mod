@@ -1,4 +1,4 @@
-module github.com/elastic/beats/v7
+module github.com/thetherington/beats
 
 go 1.19
 
